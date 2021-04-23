@@ -15,11 +15,11 @@
 
 开启抓包app后, Safari浏览器登录 https://bean.m.jd.com/bean/signIndex.action 点击签到并且出现签到日历后, 返回抓包app搜索关键字 functionId=signBean 复制请求头Cookie填入以下Key处的单引号内即可 */
 
-var Key = ''; //单引号内自行填写您抓取的Cookie
+var Key = 'pt_key=AAJgebs4ADC486Tceq_5yGjONK-4BiyVS2yNecUBrg9UmqiNkMIWH44FR3MWwjYqlY-FZj0ITPQ;pt_pin=eason%E9%99%88'; //单引号内自行填写您抓取的Cookie
 
-var DualKey = ''; //如需双账号签到,此处单引号内填写抓取的"账号2"Cookie, 否则请勿填写
+var DualKey = 'pt_key=AAJgejHmAEAEm687kwkiXEAP89jrDdWwKqxKtTPRerHYvsVCa9WAl96H1FZ6LeRpQDKR4UkRIgQ8yWsZOrg08Dixx6bVqmfV;pt_pin=717372651-53701896'; //如需双账号签到,此处单引号内填写抓取的"账号2"Cookie, 否则请勿填写
 
-var OtherKey = ''; //第三账号或以上的Cookie json串数据, 以下样例为第三第四账号：var OtherKey = '[{"cookie":"pt_key=xxxxxx;pt_pin=yyyyyy"},{"cookie":"pt_key=xxxxxx;pt_pin=yyyyyy"}]'
+var OtherKey = '[{"cookie":"pt_key=AAJgeuilADCkw_bw_O2ZvgHMprHJuNvI-yL32dbQkj8u23qoV7tUCpkjsZdtyvLa5jE6xFC2xqI;pt_pin=jd_dDPkCkPuWNzq"}]'; //第三账号或以上的Cookie json串数据, 以下样例为第三第四账号：var OtherKey = '[{"cookie":"pt_key=xxxxxx;pt_pin=yyyyyy"},{"cookie":"pt_key=xxxxxx;pt_pin=yyyyyy"}]'
 
 /* 注1: 以上选项仅针对于JsBox或Node.js, 如果使用QX,Surge,Loon, 请使用脚本获取Cookie.
    注2: 双账号用户抓取"账号1"Cookie后, 请勿点击退出账号(可能会导致Cookie失效), 需清除浏览器资料或更换浏览器登录"账号2"抓取.
